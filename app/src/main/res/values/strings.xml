@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">hwpractice_android</string>
+    <string name="app_start_flutter_activity">Start Flutter Activity</string>
+    <string name="app_start_translate_flutter_activity">Start translate flutter activity</string>
 </resources>
