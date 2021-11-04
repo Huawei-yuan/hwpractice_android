@@ -1,5 +1,6 @@
 package com.hw.android.hwpractice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,6 +17,9 @@ class MainActivity : AppCompatActivity() {
                 FlutterActivity.withCachedEngine(COMMON_FLUTTER_ENGINE_ID)
 //                .backgroundMode(FlutterActivityLaunchConfigs.BackgroundMode.transparent)
                 .build(this))
+        }
+        findViewById<View>(R.id.start_flutter_fragment_btn).setOnClickListener {
+            startActivity(Intent(this, FlutterFragmentActivity::class.java))
         }
     }
 }
